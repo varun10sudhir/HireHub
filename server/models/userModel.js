@@ -33,6 +33,12 @@ const userSchema = new mongoose.Schema(
     cvUrl: { type: String },
     jobTitle: { type: String },
     about: { type: String },
+    resume: [
+      {
+        title: { type:String, required:true },
+        file: { type:String,required:true }
+      }
+    ]
   },
   { timestamps: true }
 );

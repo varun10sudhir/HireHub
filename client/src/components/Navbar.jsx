@@ -130,6 +130,9 @@ const Navbar = () => {
               {user?.accountType === "seeker" ? "Applications":"Upload Job"}</Link>
           </li>
           <li>
+            <Link to='/upload-resume'>Upload Resume</Link>
+          </li>
+          <li>
             <Link to='/about-us'>About</Link>
           </li>
         </ul>

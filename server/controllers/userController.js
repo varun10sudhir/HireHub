@@ -2,6 +2,7 @@ import mongoose from "mongoose";
 import Users from "../models/userModel.js";
 import Jobs from "../models/jobsModel.js"
 
+
 export const updateUser = async (req, res, next) => {
   const {
     firstName,
@@ -152,4 +153,8 @@ export const getUserDetails = async(req,res,next) =>
       error: error.message,
     });
   }
+}
+
+export const resumeupload = async(req,res,next) =>{
+  res.send("Hi how are you");
 }
